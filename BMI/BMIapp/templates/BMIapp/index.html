@@ -1,0 +1,52 @@
+{% extends 'BMIapp/base.html' %}
+{% load static %}
+{% block page_title %}Home{% endblock %}
+{% block page_content %}
+<section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
+
+    <div class="bg-overlay"></div>
+
+       <div class="container">
+            <div class="row">
+                 <div class="col-lg-8 col-md-10 mx-auto col-12">
+                      <div class="hero-text mt-5 text-center">
+
+                            <h6 data-aos="fade-up" data-aos-delay="300">new way to build a healthy lifestyle!</h6>
+
+                            <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">Measure and track your BMI rating</h1>
+
+                            <a href="#feature" class="btn custom-btn mt-3" data-aos="fade-up" data-aos-delay="600">Get started</a>                                   
+                      </div>
+                 </div>
+            </div>
+       </div>
+</section>
+
+
+<section class="feature" id="feature">
+<div class="container">
+    <div class="row">
+
+        <div class="d-flex flex-column justify-content-center ml-lg-auto mr-lg-5 col-lg-5 col-md-6 col-12">
+            <h2 class="mb-3 text-white" data-aos="fade-up">Measure Your BMI</h2>
+
+            <form action="" method="post">
+                <input type="number" data-aos="fade-up" data-aos-delay="200" class="form-control" name="cf-weight" placeholder="Weight (kg)">
+                <input type="number" data-aos="fade-up" data-aos-delay="200" class="form-control" name="cf-height" placeholder="Height (cm)">
+                <input class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="300" type="submit" value="Measure">
+            </form>
+        </div>
+
+        <div class="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12">
+             <div class="about-working-hours">
+                  <div>
+                        <h2 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="500">Your Rating: &nbsp; 21.5</h2>
+                        <img src="{% static 'images/bmi/w1.png' %}" width="60%" data-aos="fade-up" data-aos-delay="500" alt="IMG">
+                  </div>
+             </div>
+        </div>
+
+    </div>
+</div>
+</section>
+{% endblock %}
