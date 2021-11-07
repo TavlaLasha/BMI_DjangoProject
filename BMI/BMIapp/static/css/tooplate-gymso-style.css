@@ -407,7 +407,13 @@ https://www.tooplate.com/view/2119-gymso-fitness
     line-height: 3.5rem;
     text-align: center;
   }
-
+    /*---------------------------------------
+      LOGIN          
+  -----------------------------------------*/
+  .login-info {
+    border-left: 2px solid silver;
+    padding-left: 3.5rem;
+  }
   /*---------------------------------------
       ABOUT & TEAM            
   -----------------------------------------*/
